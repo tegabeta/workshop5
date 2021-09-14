@@ -33,7 +33,7 @@ for i in range(2):
         thisPicFrame[20:h+20,20:w+20,:] = faceROI
 
         #Initialise output path based on file input and no. of face detected
-        output_path = '../Output Faces/' + input_type + '-' + str(k) +'.png'
+        output_path = '../Faces/' + input_type + '-' + str(k) +'.png'
         cv2.imwrite(output_path,thisPicFrame)
         cv2.imshow(input_type,thisPicFrame)
 
