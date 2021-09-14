@@ -7,7 +7,7 @@ To do this, we perform line detection on the image and extract contours.
 import cv2
 import numpy as np
 
-frame = cv2.imread ('..\Photos/collage.png')
+frame = cv2.imread ('../Photos/collage.png')
 edges = cv2.Canny(frame,100,200) # This uses the canny edge detector. The 100 and 200 are rather arbitrary parameters; the second should be larger than the first, play around to see what numbers work best for each image.
 
 contours, hierarchy = cv2.findContours(edges,cv2.RETR_LIST,cv2.CHAIN_APPROX_NONE)
